@@ -43,7 +43,7 @@
 
 
   
- <audio id="audio" src="./musica/"></audio>
+ <audio id="audio" src="./Icona Pop - I Love It (ft. Charli XCX) (Lyrics) [MZm-vC9CBe4].mp3"></audio>
 
 <div class="music-player" id="player">
   <button class="play-btn" id="playBtn">►</button>
@@ -110,7 +110,7 @@
 </div>
 
 
-<img class="calendario" src="./imagenes/CALENDARIO.png" alt="">
+<img class="calendario" src="./imagenes/CALENDARIO.jpg" alt="">
 
 <img class="plateado" src="./imagenes/PLATEADO.png" alt="">
   <p class="parrafo4">Fiesta</p>
@@ -148,7 +148,7 @@
 
 
 <br>
-<a class="aa" href="https://wa.me/549?text=%20♡%20Te%20confirmo%20la%20asistencia%20a%20los%20XV%20de%20Amalia.%20y%20soy%20...." target="_blank">
+<a class="aa" href="https://wa.me/5493795192899?text=%20♡%20Te%20confirmo%20la%20asistencia%20a%20los%20XV%20de%20Amalia.%20y%20soy%20...." target="_blank">
   <img class="whatsap" src="./imagenes/whatsap.png" alt="WhatsApp">
 
 <img class="aita" src="./imagenes/AMALIA.png" alt="">
@@ -248,6 +248,20 @@
         digit_invitaciones7</a></b></p> 
   </div>
   
+<script>
+  const audio = document.getElementById("audio");
+  const playBtn = document.getElementById("playBtn");
+
+  playBtn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = "❚❚"; // pausa
+    } else {
+      audio.pause();
+      playBtn.textContent = "►"; // play
+    }
+  });
+</script>
 
 
 
